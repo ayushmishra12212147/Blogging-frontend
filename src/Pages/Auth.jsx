@@ -10,7 +10,7 @@ function Auth() {
     console.log(values, actions);
     try {
       //api for login  or register will be called here 
-      const { data } = await axios.post(`http://localhost:3001/api/users${isregister ? '' : '/login'}`, { user: values });
+      const { data } = await axios.post(`https://blogging-backend-s94y.onrender.com/api/users${isregister ? '' : '/login'}`, { user: values });
 
 
       console.log(data.user)
